@@ -9,7 +9,7 @@
      public double calcTotalPrice() {
          double total = getPrice();
          if (hasTax) {
-             double tax = total * 0.08; // Additional cost for coke
+             double tax = total * 0.08; // Additional cost for soda
              total += tax;
          }
          return total;
