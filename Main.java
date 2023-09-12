@@ -23,6 +23,8 @@ public class Main {
        Hershey hersheyMilkChoco = new Hershey("Hershey Milk Chocolate", "Milk Chocolate", 2.00, 220, ItemCategories.CHOCOLATE_BARS);
        Hershey hersheyAlmonds = new Hershey("Hershey Milk chocolate with Almonds", "Milk chocolate with almonds", 2.50, 210, ItemCategories.CHOCOLATE_BARS);
        Hershey hersheyCookiesNcream = new Hershey("Hershey Cookies 'N' Creme","Cookies & Cream", 3.00, 220, ItemCategories.CHOCOLATE_BARS );
+       Hershey hersheyNuggets = new Hershey("Hershey Nuggets", "Milk chocolate", 5.00, 150, ItemCategories.CHOCOLATE_BARS);
+
 
        System.out.println("Item selected: " + cokeOriginal.getName());
        System.out.println("Item price: $" + hersheyMilkChoco.calcTotalPrice());
