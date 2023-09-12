@@ -56,8 +56,7 @@ public class Main {
        /*end cookie category*/
 
        //start vending machine
-
-
+       VendingMachinePrices vendingMachinePrices = new VendingMachinePrices(6, 6);
        VendingMachine vendingMachine = new VendingMachine(6, 6);
 
        //add products to array
