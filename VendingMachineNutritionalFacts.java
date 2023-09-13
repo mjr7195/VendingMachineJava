@@ -5,9 +5,9 @@ public class VendingMachineNutritionalFacts {
         productNFacts = new int[rows][cols];
     }
 
-    public void addProductNFacts(int rows, int cols, int productName){
+    public void addProductNFacts(int rows, int cols, int productNFact){
         if (rows >= 0 && rows < productNFacts.length && cols >= 0 && cols < productNFacts[0].length){
-            productNFacts[rows][cols] = productName;
+            productNFacts[rows][cols] = productNFact;
         } else {
             System.out.println("Invalid input for adding product.");
         }
