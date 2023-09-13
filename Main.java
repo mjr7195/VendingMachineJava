@@ -58,9 +58,9 @@ public class Main {
       //start vending machine
       VendingMachinePrices vendingMachinePrices = new VendingMachinePrices(6, 6);
       VendingMachine vendingMachine = new VendingMachine(6, 6);
+      VendingMachineNutritionalFacts vendingMachineNFacts = new VendingMachineNutritionalFacts(6,6);
 
       //add products to array
-      /*first row*/
       vendingMachine.addProduct(0, 0, cokeOriginal.getName());
       vendingMachine.addProduct(0, 1, cokeRaspberry.getName());
       vendingMachine.addProduct(0, 2, cokeCherry.getName());
@@ -156,6 +156,56 @@ public class Main {
       vendingMachinePrices.addProductPrices(5, 3, mapleWalnutCK.getPrice());
       vendingMachinePrices.addProductPrices(5, 4, cinnamonCk.getPrice());
       vendingMachinePrices.addProductPrices(5, 5, smoreCK.getPrice());
+
+      //************************Nutritional facts array*************************
+      /*first row*/
+      vendingMachineNFacts.addProductNFacts(0, 0, cokeOriginal.getCalories());
+      vendingMachineNFacts.addProductNFacts(0, 1, cokeRaspberry.getCalories());
+      vendingMachineNFacts.addProductNFacts(0, 2, cokeCherry.getCalories());
+      vendingMachineNFacts.addProductNFacts(0, 3, spriteOriginal.getCalories());
+      vendingMachineNFacts.addProductNFacts(0, 4, spriteLymonade.getCalories());
+      vendingMachineNFacts.addProductNFacts(0, 5, spriteZero.getCalories());
+
+      /* second row */
+      vendingMachineNFacts.addProductNFacts(1, 0, laysOriginal.getCalories());
+      vendingMachineNFacts.addProductNFacts(1, 1, laysBBQ.getCalories());
+      vendingMachineNFacts.addProductNFacts(1, 2, laysChileLimon.getPrice());
+      vendingMachineNFacts.addProductNFacts(1, 3, doritosSpicySweetChili.getCalories());
+      vendingMachineNFacts.addProductNFacts(1, 4, doritosOriginal.getCalories());
+      vendingMachineNFacts.addProductNFacts(1, 5, doritosReducedFat.getCalories());
+
+      // Third Row
+      vendingMachineNFacts.addProductNFacts(2, 0, hersheyMilkChoco.getCalories());
+      vendingMachineNFacts.addProductNFacts(2, 1, hersheyAlmonds.getCalories());
+      vendingMachineNFacts.addProductNFacts(2, 2, hersheyCookiesNcream.getCalories());
+      vendingMachineNFacts.addProductNFacts(2, 3, hersheyNuggets.getCalories());
+      vendingMachineNFacts.addProductNFacts(2, 4, hersheyKisses.getCalories());
+      vendingMachineNFacts.addProductNFacts(2, 5, hersheyCottonCandy.getCalories());
+
+      // Forth row
+      vendingMachineNFacts.addProductNFacts(3, 0, cherryGarcia.getCalories());
+      vendingMachineNFacts.addProductNFacts(3, 1, chocoChipCookieDough.getCalories());
+      vendingMachineNFacts.addProductNFacts(3, 2, mintChocoCookie.getCalories());
+      vendingMachineNFacts.addProductNFacts(3, 3, pbCup.getCalories());
+      vendingMachineNFacts.addProductNFacts(3, 4, sbCheesecake.getCalories());
+      vendingMachineNFacts.addProductNFacts(3, 5, saltedCara.getCalories());
+
+      // Fifth row
+      vendingMachineNFacts.addProductNFacts(4, 0, skittles.getCalories());
+      vendingMachineNFacts.addProductNFacts(4, 1, candyCane.getCalories());
+      vendingMachineNFacts.addProductNFacts(4, 2, starburst.getCalories());
+      vendingMachineNFacts.addProductNFacts(4, 3, tootsiePop.getCalories());
+      vendingMachineNFacts.addProductNFacts(4, 4, twizzler.getCalories());
+      vendingMachineNFacts.addProductNFacts(4, 5, candyCorn.getCalories());
+
+      // Sixth row
+      vendingMachineNFacts.addProductNFacts(5, 0, chocoChipCK.getCalories());
+      vendingMachineNFacts.addProductNFacts(5, 1, sugarCK.getCalories());
+      vendingMachineNFacts.addProductNFacts(5, 2, oreoCK.getCalories());
+      vendingMachineNFacts.addProductNFacts(5, 3, mapleWalnutCK.getCalories());
+      vendingMachineNFacts.addProductNFacts(5, 4, cinnamonCk.getCalories());
+      vendingMachineNFacts.addProductNFacts(5, 5, smoreCK.getCalories());
+
 
       Scanner scanner = new Scanner(System.in);
       //welcome user

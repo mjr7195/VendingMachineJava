@@ -1,5 +1,5 @@
 public class VendingMachine {
-   public String[][] products;
+   private String[][] products;
 
    public VendingMachine(int rows, int cols){
        products = new String[rows][cols];
