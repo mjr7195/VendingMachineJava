@@ -108,6 +108,55 @@ public class Main {
        vendingMachine.addProduct(5,4, cinnamonCk.getName());
        vendingMachine.addProduct(5,5, smoreCK.getName());
 
+       /*price array*/
+       /*first row*/
+       vendingMachinePrices.addProductPrices(0,0, cokeOriginal.getPrice());
+       vendingMachinePrices.addProductPrices(0,1, cokeRaspberry.getPrice());
+       vendingMachinePrices.addProductPrices(0,2, cokeCherry.getPrice());
+       vendingMachinePrices.addProductPrices(0,3, spriteOriginal.getPrice());
+       vendingMachinePrices.addProductPrices(0,4, spriteLymonade.getPrice());
+       vendingMachinePrices.addProductPrices(0,5, spriteZero.getPrice());
+
+       /* second row */
+       vendingMachinePrices.addProductPrices(1,0, laysOriginal.getPrice());
+       vendingMachinePrices.addProductPrices(1,1, laysBBQ.getPrice());
+       vendingMachinePrices.addProductPrices(1,2, laysChileLimon.getPrice());
+       vendingMachinePrices.addProductPrices(1,3, doritosSpicySweetChili.getPrice());
+       vendingMachinePrices.addProductPrices(1,4, doritosOriginal.getPrice());
+       vendingMachinePrices.addProductPrices(1,5, doritosReducedFat.getPrice());
+
+       // Third Row
+       vendingMachinePrices.addProductPrices(2,0, hersheyMilkChoco.getPrice());
+       vendingMachinePrices.addProductPrices(2,1, hersheyAlmonds.getPrice());
+       vendingMachinePrices.addProductPrices(2,2, hersheyCookiesNcream.getPrice());
+       vendingMachinePrices.addProductPrices(2,3, hersheyNuggets.getPrice());
+       vendingMachinePrices.addProductPrices(2,4, hersheyKisses.getPrice());
+       vendingMachinePrices.addProductPrices(2,5, hersheyCottonCandy.getPrice());
+
+       // Forth row
+       vendingMachinePrices.addProductPrices(3,0, cherryGarcia.getPrice());
+       vendingMachinePrices.addProductPrices(3,1, chocoChipCookieDough.getPrice());
+       vendingMachinePrices.addProductPrices(3,2, mintChocoCookie.getPrice());
+       vendingMachinePrices.addProductPrices(3,3, pbCup.getPrice());
+       vendingMachinePrices.addProductPrices(3,4, sbCheesecake.getPrice());
+       vendingMachinePrices.addProductPrices(3,5, saltedCara.getPrice());
+
+       // Fifth row
+       vendingMachinePrices.addProductPrices(4,0, skittles.getPrice());
+       vendingMachinePrices.addProductPrices(4,1, candyCane.getPrice());
+       vendingMachinePrices.addProductPrices(4,2, starburst.getPrice());
+       vendingMachinePrices.addProductPrices(4,3, tootsiePop.getPrice());
+       vendingMachinePrices.addProductPrices(4,4, twizzler.getPrice());
+       vendingMachinePrices.addProductPrices(4,5, candyCorn.getPrice());
+
+       // Sixth row
+       vendingMachinePrices.addProductPrices(5,0, chocoChipCK.getPrice());
+       vendingMachinePrices.addProductPrices(5,1, sugarCK.getPrice());
+       vendingMachinePrices.addProductPrices(5,2, oreoCK.getPrice());
+       vendingMachinePrices.addProductPrices(5,3, mapleWalnutCK.getPrice());
+       vendingMachinePrices.addProductPrices(5,4, cinnamonCk.getPrice());
+       vendingMachinePrices.addProductPrices(5,5, smoreCK.getPrice());
+
        Scanner scanner = new Scanner(System.in);
        //welcome user
        System.out.println("Welcome to my Vending Machine!");
