@@ -1,6 +1,8 @@
 import java.util.Scanner;
 public class Main {
    public static void main(String[] args) {
+
+
       /* Soda categories */
       Coke cokeOriginal = new Coke("Coke Original", "vanilla with a bit of citrus", 1.25, 150, ItemCategories.SODA, true);
       Coke cokeRaspberry = new Coke("Coke Raspberry", "Raspberry", 1.50, 140, ItemCategories.SODA, true);
@@ -59,6 +61,7 @@ public class Main {
       VendingMachinePrices vendingMachinePrices = new VendingMachinePrices(6, 6);
       VendingMachine vendingMachine = new VendingMachine(6, 6);
       VendingMachineNutritionalFacts vendingMachineNFacts = new VendingMachineNutritionalFacts(6,6);
+
 
       //add products to array
       vendingMachine.addProduct(0, 0, cokeOriginal.getName());
@@ -241,9 +244,15 @@ public class Main {
             System.out.println("Please choose your desired column from the table above: ");
             colChoice = scanner.nextInt();
          }
+
          String productChoice = vendingMachine.getProduct(rowChoice, colChoice);
          double productPrice = vendingMachinePrices.getProductPrices(rowChoice, colChoice);
          int productCalories = vendingMachineNFacts.getProductNFacts(rowChoice, colChoice);
+
+         processing();
+         vending();
+         System.out.println();
+
 
          System.out.println(productChoice + " is $" + productPrice);
          System.out.println(productChoice + " has "+ productCalories +" calories");
@@ -271,6 +280,13 @@ public class Main {
       // Always close input, open connections to files, database,& networking
       scanner.close();
    }//main method end
+
+   private static void processing() {
+      System.out.println("Processing Request");
+   }
+   private static void vending(){
+      System.out.println("Item is being retrieved");
+   }
 }//main class end
 
 
