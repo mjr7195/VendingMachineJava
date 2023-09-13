@@ -169,7 +169,7 @@ public class Main {
       /* second row */
       vendingMachineNFacts.addProductNFacts(1, 0, laysOriginal.getCalories());
       vendingMachineNFacts.addProductNFacts(1, 1, laysBBQ.getCalories());
-      vendingMachineNFacts.addProductNFacts(1, 2, laysChileLimon.getPrice());
+      vendingMachineNFacts.addProductNFacts(1, 2, laysChileLimon.getCalories());
       vendingMachineNFacts.addProductNFacts(1, 3, doritosSpicySweetChili.getCalories());
       vendingMachineNFacts.addProductNFacts(1, 4, doritosOriginal.getCalories());
       vendingMachineNFacts.addProductNFacts(1, 5, doritosReducedFat.getCalories());
@@ -243,8 +243,10 @@ public class Main {
          }
          String productChoice = vendingMachine.getProduct(rowChoice, colChoice);
          double productPrice = vendingMachinePrices.getProductPrices(rowChoice, colChoice);
+         int productCalories = vendingMachineNFacts.getProductNFacts(rowChoice, colChoice);
 
          System.out.println(productChoice + " is $" + productPrice);
+         System.out.println(productChoice + " has "+ productCalories +" calories");
 
          System.out.print("Insert coins for payment (e.g., 1.00 for $1.00): $");
          double payment = scanner.nextDouble();  // Accept user payment
@@ -264,7 +266,7 @@ public class Main {
 
       }// while loop end
       System.out.println("Thank you for using the Vending Machine!");
-      System.out.println("Total amount earned: $" + totalAmount);
+      System.out.println("Total amount of transaction(s): $" + totalAmount);
 
       // Always close input, open connections to files, database,& networking
       scanner.close();

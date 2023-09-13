@@ -1,11 +1,11 @@
 public class VendingMachineNutritionalFacts {
-    public double[][] productNFacts;
+    public int[][] productNFacts;
 
     public VendingMachineNutritionalFacts(int rows, int cols){
-        productNFacts = new double[rows][cols];
+        productNFacts = new int[rows][cols];
     }
 
-    public void addProductNFacts(int rows, int cols, double productName){
+    public void addProductNFacts(int rows, int cols, int productName){
         if (rows >= 0 && rows < productNFacts.length && cols >= 0 && cols < productNFacts[0].length){
             productNFacts[rows][cols] = productName;
         } else {
@@ -13,8 +13,8 @@ public class VendingMachineNutritionalFacts {
         }
     }
 
-    public double getProductNFacts(int rows, int cols) {
-        double productNFact = productNFacts[rows][cols];
+    public int getProductNFacts(int rows, int cols) {
+        int productNFact = productNFacts[rows][cols];
         if (rows >= 0 && rows < productNFacts.length && cols >= 0 && cols < productNFacts.length) {
             productNFact = productNFacts[rows][cols];
 
