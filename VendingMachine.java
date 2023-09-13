@@ -1,9 +1,10 @@
 public class VendingMachine {
-   private String[][] products;
+   public String[][] products;
 
    public VendingMachine(int rows, int cols){
        products = new String[rows][cols];
    }
+
    public void addProduct(int rows, int cols, String productName){
        if (rows >= 0 && rows < products.length && cols >= 0 && cols < products[0].length){
            products[rows][cols] = productName;
